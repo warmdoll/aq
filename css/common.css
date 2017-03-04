@@ -1,0 +1,458 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,p,blockquote,th,td{padding: 0;margin: 0;}
+body { font: normal 100% Helvetica, Arial, sans-serif;}
+body{font-size: 12px;font-size: 1.2rem;} 
+html,body{width: 100%;height: 100%;}
+img{border:0;display: block;}
+input:focus,textarea:focus{outline:none}
+div{box-sizing: border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+ul,li{list-style-type:none;}
+.fl{float: left;}
+.rt{float: right;}
+/*父级清楚浮动*/
+.clearfix:after{visibility:hidden;display:block; font-size:0; content:'\20'; clear:both; height:0;}
+.clear{clear: both;}
+/*垂直居中对齐*/
+.ver-middle{position: absolute; bottom: 50%;left: 50%;transform: translate(-50%, -50%);}
+
+/*点点显示*/
+.over-circle{display:inline-block;padding:0.1rem;width:100%;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;}
+.overtwo-circle{display: -webkit-box;overflow: hidden;word-break: break-all;-webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.flex-box{display: flex;display: -webkit-flex;}
+a{text-decoration:none;color: currentcolor;}
+a:hover{text-decoration:none;}
+/*该站公用样式*/
+.main-clor{
+	color:#E51600;
+}
+.body{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-top: 11.7rem;
+}
+/*头部*/
+.qa-headaer{
+	height: 4rem;
+	background-color: #e51600;
+	position: relative;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #fff;
+	    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	height:100%;
+	width: 3.5rem;
+	text-align: left;
+}
+.back i{
+	background-position: -11.4rem -9rem;	
+	width: 0.9rem;
+	height: 1.7rem;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.more{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 3.5rem;
+	text-align: right;
+	top: 0;
+}
+.more-tips{
+	width: 0.7rem;
+    height: 0.7rem;
+    background-position: -17.4rem -8.7rem;
+    right: 21%;
+    top: 25%;
+}
+
+.more-none{
+	width: 0.7rem;
+    height: 2.3rem;
+    background-position: -16.6rem -8.7rem;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bg-icon{
+	background-image: url(../img/bg-icon.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	background-size: 18rem 10.9rem;
+}
+
+.head-title{
+	font-size: 1.8rem;
+	color: #fff;
+	    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*悬浮窗*/
+.suspend{
+	position: fixed;
+	bottom: 11rem;
+	right: 6rem;
+	z-index: 10;
+}
+.suspend .gotop{
+	background-position: 0 0;
+	width: 4.4rem;
+	height: 4.4rem;
+	display: none;
+}
+.suspend .ask-icon{
+	background-position: -5.1rem 0;
+	width: 4.4rem;
+	height: 4.4rem;	
+    margin-top: 5.2rem;
+}
+/*更多的半透明层*/
+.more-hide-dive{
+	position: fixed;
+	top:4rem;
+	right: 0;
+	z-index: 19;
+	display: none;
+}
+.more-list{	
+	background-color: rgba(35,24,21,0.8);
+	border-radius: 0.4rem;
+	margin-top: 1rem;
+}
+.more-arrow{
+	position: absolute;
+	border-color: transparent;
+	border-bottom-color: rgba(35,24,21,0.8);
+	border-width: 1.1rem 1.2rem;
+	border-style: solid;
+	top: -1rem;
+    right: 0.6rem;
+}
+.more-list ul li{
+	line-height: 3.9rem;
+	margin: 0 1rem;
+	color: #CECECE;
+	font-size: 1.3rem;
+	margin: 0 1rem;
+	border-bottom: 1px solid #CECECE;
+	position: relative;
+}
+.more-list ul li:last-child{
+	border: 0;
+}
+.more-list ul li i{
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	left: 0.3rem;
+}
+.more-list ul li .text{
+	margin-left: 3.1rem;
+}
+.my-ask{
+	background-position: -16.3rem 0;
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.change{
+	background-position: -16.3rem -2.2rem;
+	width: 1.6rem;
+	height: 1.1rem;
+}
+.home-icon{
+	background-position: -16.3rem -3.9rem;
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.red-dot{
+	background-color: #E51600;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: 1.2rem;
+	margin-right: 0.3rem;
+}
+
+/*遮罩*/
+.shade{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	top:0;
+	left: 0;
+	display: none;
+	margin-top: 5rem;
+}
+
+
+
+/*搜索框*/
+.search-div{
+	background-color: #f7f7f7;
+	border-bottom: 0.1rem solid #ECECED;
+	border-top: 0.1rem solid #ECECED;
+}
+
+.search-div>div{
+	background-color: #fff;
+	height: 2.7rem;
+	border: 0.1rem solid #ECECED;
+	margin: 0.7rem 1rem;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 2.5rem;
+	position: relative;
+}
+
+
+
+.search-div i{
+	background-position:-13.9rem -9.2rem;
+	width: 1.4rem;
+	height: 1.3rem;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.search-div span{
+	margin-left: 1.9rem;
+	color: #DDDBDB;
+	font-size: 1.2rem;
+}
+
+.head-fixed{
+	position: fixed;
+	top: 0;left: 0;right: 0;
+	z-index: 10;
+}
+/*搜索层*/
+.main-box{
+	width:100%;
+	height: 100%;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+}
+.search-box{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #fff;
+	transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+}
+.main-box,.search-box{
+	transition: transform 0.5s ease;
+}
+.search-div i{
+	left: 29%;
+}
+.search{
+	display: inline-block;
+	color: #fff;
+	font-size: 1.5rem;
+	position: absolute;
+	right: 0;
+	margin-right: 1.3rem;
+	top:50%;
+	transform: translateY(-50%);
+}
+.search-div input{
+	width: 100%;
+	text-decoration: none;
+	height: 2.5rem;
+	border: 0;
+	float: right;
+	padding:0 1rem;
+	color:#7F7F7F;
+	font-size: 1.2rem;
+	background-color: #fff;
+	
+}
+.search-div input::-ms-input-placeholder{text-align: center;color: #DDDBDB;}
+.search-div input::-webkit-input-placeholder{text-align: center;color: #DDDBDB;}
+.history-box{
+	color: #7F7F7F;
+}
+.history-head{
+	padding: 1rem;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #eee;
+}
+.history-box ul li{
+	padding: 0 1rem;
+	font-size: 1.4rem;
+	border-bottom: 1px solid #eee;
+	line-height: 4rem;
+	height: 4rem;
+	box-sizing: border-box;
+}
+.search-slider{	
+	margin-top: 8.3rem;	
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+
+/*问题列表*/
+.question-box{
+	padding: 0.7rem 1rem;
+	border-bottom: 0.1rem solid #ECECED;
+}
+.question-box:last-child{
+	border: 0;
+}
+.question-box>p{
+	font-size: 1.4rem;
+	color: #7F7F7F;
+	margin: 1rem 0 2rem 0;
+}
+.head-box{
+	position: relative;
+	color: #AAAAAA;
+}
+.headpic{
+	width: 3.3rem;
+	height: 3.3rem;
+	border-radius: 50%;
+}
+.headpic,.head-text,.report{
+	display: inline-block;
+}
+.head-text{
+	margin-left: 1rem;
+}
+
+.reward{
+	margin-left: 1rem;
+}
+.score{
+	color: #E51600;
+}
+.status{
+	margin-top: 0.2rem;
+}
+.report{
+	position: absolute;
+	right: 0;
+	top:0;
+}
+.bottom-box{
+	color: #AAAAAA;
+}
+.bottom-box div{
+	float: left;
+	width: 33.3%;
+}
+.bottom-box div:nth-child(1){
+	text-align: left;
+}
+.bottom-box div:nth-child(2){
+	text-align: center;
+}
+.bottom-box div:nth-child(3){
+	text-align: right;
+}
+.color-7f{
+	color:#7f7f7f;
+}
+/*推荐课程*/
+.course-div{
+	border-top: 0.4rem solid #ECECED;
+	border-bottom: 0.4rem solid #ECECED;
+	padding: 0.7rem 1rem;
+}
+.course-head{
+	border: 1px solid #ECECED;
+	background-color: #F7F7F7;
+	color: #525252;
+	font-size: 1.4rem;
+	position: relative;
+}
+.course-head-title{
+	line-height: 2.8rem;
+	margin-left: 1.5rem;
+}
+.arrow{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	left:0.5rem;
+	width: 0.5rem;
+}
+.course-img-more{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 0.5rem;
+	width: 1rem;
+}
+.course-more{
+	position: absolute;
+	line-height: 2.8rem;
+	right: 1.9rem;
+	font-size: 1.2rem;
+}
+.course-wrap{
+	margin-top: 0.5rem;
+	overflow: scroll;
+}
+
+.course-box{
+	margin-right: 0.5rem;
+	display: inline-block;
+	width: 14.6rem;
+	float: left;
+}
+.course-box:last-child{
+	margin-right: 0;
+}
+.course-img{
+	border: 0.1rem solid #ECECED;
+}
+.course-img img{
+	width: 14rem;
+	height:8rem;
+	margin: 0.2rem;
+}
+.course-wrap p{
+	color: #AAAAAA;
+	margin-top: 0.8rem;
+	margin-bottom: 0.2rem;
+}
+.book-img{
+	border: 0.1rem solid #ECECED;
+}
+.book-img img{
+	width: 14rem;
+	height:14rem;
+	margin: 0.2rem;
+}
+.frame{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/*新加公共样式*/
+.tac{text-align: center;}

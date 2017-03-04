@@ -1,0 +1,48 @@
+/*筛选tab*/
+#nav{
+	background-color: #fff;
+	font-size: 1.4rem;
+}
+
+#nav ul li{
+	line-height: 3.3rem;
+	float: left;
+	width: 16.66%;
+	text-align: center;
+	color: #999;
+	border-bottom: 0.2rem solid #FFFFFF;
+}
+#nav ul li:active{
+	background-color: rgba(247,247,247,1);	
+	border-bottom: 0.2rem solid rgba(247,247,247,1);
+}
+#nav ul li.active-nav{
+	color: #E51600;
+	border-bottom: 0.2rem solid #E51600;
+}
+/*滑动层*/
+.box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #fff;
+}
+.ask-div{
+	margin: 1.5rem 1rem 2rem;
+	background-color: #5cca6c;
+	border-radius: 0.5rem;
+	color: #fff;
+	font: 1.4rem;
+	text-align: center;
+	line-height: 3.5rem;
+}
+.question-box:last-child{
+	border-bottom: 0.1rem solid #ECECED;
+}
+.mui-scroll{
+	background-color: #fff;
+	border-top: 0.1rem solid #ECECED; ;
+}
+.mui-scroll>a{
+	display: block;
+}

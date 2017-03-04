@@ -1,0 +1,15 @@
+html,body{font-size: 1.5rem;}
+.qa-report{height: 100%;width: 100%;}
+.bge{background-color: #eee;}
+.qacolor-a{color: #aaa;}
+.qacolor-f7{color: #7f7f7f;}
+.qabd-ec{border-bottom: 1px solid #ECECED;}
+.qa-report-list,.qa-report-title{padding: 1rem 1.2rem;}
+.qa-report-list.active{color: #E51600;}
+.qa-fix-bottombox{margin-top: 4rem;}
+.qa-report-text{padding: 1rem 0.5rem;background-color: #f7f7f7;padding-bottom: 0.5rem;}
+textarea,.qa-report-btn{box-sizing: border-box;}
+textarea{font-family: "微软雅黑";color: #7f7f7f; width: 100%;outline: none;height: 8rem;border: 1px solid #ececed;padding: 0.5rem;}
+textarea::-ms-input-placeholder{color:#aaa !important; }
+textarea::-webkit-input-placeholder{color:#aaa !important; }
+.qa-report-btn{margin:1rem 0; outline: none;border: 0; background-color: #ff6700;color: #fff;border-radius: 3px;padding: 0.5rem 2rem;}
